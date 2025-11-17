@@ -1,0 +1,18 @@
+<section id='help' class='py-16 bg-paper'>
+  <div class='max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center'>
+    <div>
+      <p class='text-brand font-semibold text-sm'>{{data.eyebrow}}</p>
+      <h2 class='mt-2 text-3xl md:text-4xl font-semibold'>{{data.title}}</h2>
+      <p class='mt-3 text-slate-600'>{{data.text}}</p>
+      <a href='#' class='inline-block mt-4 text-link underline'>{{data.cta}}</a>
+    </div>
+    <div class='relative'>
+      <img src='{{data.image}}' alt='' class='w-full rounded-xl' />
+      <div
+        class='absolute -bottom-3 left-6 bg-white shadow rounded-full px-4 py-2 text-sm'
+      >
+        {{data.badge}}
+      </div>
+    </div>
+  </div>
+</section>

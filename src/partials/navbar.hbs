@@ -1,0 +1,53 @@
+<header
+  class='sticky top-0 z-40 bg-white/90 backdrop-blur border-b-2 border-gray-100'
+>
+  <div class='max-w-6xl mx-auto px-4 h-16 flex items-center justify-between'>
+    <a href='#' class='flex items-center gap-2'>
+      <img src='{{brand.logo}}' alt='{{brand.name}}' class='h-6 w-auto' />
+    </a>
+
+    <nav class='hidden md:flex items-center gap-8 text-sm'>
+      {{#each data.items}}
+        <a href='{{href}}' class='hover:underline'>{{label}}</a>
+      {{/each}}
+    </nav>
+
+    <div class='hidden md:flex items-center gap-4'>
+      <a
+        href='{{data.login.href}}'
+        class='text-sm hover:underline'
+      >{{data.login.label}}</a>
+      <a
+        href='{{data.cta.href}}'
+        class='btn-primary text-sm py-2'
+      >{{data.cta.label}}</a>
+    </div>
+
+    <button
+      class='md:hidden inline-flex items-center p-2'
+      @click='mobileNav=!mobileNav'
+      aria-label='Open menu'
+    >
+      ☰
+    </button>
+  </div>
+
+  <!-- mobile drawer -->
+  <div class='md:hidden border-t' x-show='mobileNav' x-transition>
+    <div class='px-4 py-3 space-y-3'>
+      {{#each data.items}}
+        <a href='{{href}}' class='block'>{{label}}</a>
+      {{/each}}
+      <div class='pt-2 flex items-center gap-3'>
+        <a
+          href='{{data.login.href}}'
+          class='text-sm underline'
+        >{{data.login.label}}</a>
+        <a
+          href='{{data.cta.href}}'
+          class='btn-primary text-sm py-2'
+        >{{data.cta.label}}</a>
+      </div>
+    </div>
+  </div>
+</header>

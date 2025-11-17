@@ -1,0 +1,26 @@
+<section class='bg-white md:pb-10'>
+  <div
+    class='max-w-6xl mx-auto my-4 pl-10 pr-6 md:pl-16 md:pr-0 md:py-16 grid md:grid-cols-2 gap-10 items-center'
+  >
+    <div>
+      <p
+        class='text-brand font-semibold tracking-wide text-sm'
+      >{{data.eyebrow}}</p>
+      <h1 class='mt-1 text-4xl md:text-6xl font-semibold leading-tight'>
+        A New Kind Of<br />Life Insurance
+      </h1>
+      <p
+        class='mt-4 text-lg text-slate-600 whitespace-pre-line'
+      >{{data.subtitle}}</p>
+      <div class='mt-6 flex gap-3'>
+        <a href='#calculator' class='btn-primary'>
+          <span>{{data.primaryCta}}</span>
+          <img src='/assets/images/arrow.png' alt='' class='btn-arrow' />
+        </a>
+      </div>
+    </div>
+    <div class='relative overflow-visible'>
+      <img src='{{data.image}}' alt='' class='w-full max-w-none hero-image' />
+    </div>
+  </div>
+</section>

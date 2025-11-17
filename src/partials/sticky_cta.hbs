@@ -1,0 +1,13 @@
+<div
+  class='fixed inset-x-0 bottom-0 z-50 bg-white/90 backdrop-blur border-t px-4 py-3 md:hidden'
+  x-show='showSticky'
+  x-transition
+>
+  <div class='max-w-6xl mx-auto flex items-center justify-between gap-4'>
+    <span class='text-sm font-medium'>Ready? Get your price</span>
+    <a
+      href='{{data.href}}'
+      class='btn-primary text-sm py-2 px-4'
+    >{{data.label}}</a>
+  </div>
+</div>

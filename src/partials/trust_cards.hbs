@@ -1,0 +1,18 @@
+<section class='py-16'>
+  <div class='max-w-6xl mx-auto px-4'>
+    <h3
+      class='text-center text-slate-500 uppercase tracking-wide text-sm'
+    >Top-rated term life insurance</h3>
+    <h2 class='text-center mt-2 text-3xl font-semibold'>You’re in safe hands</h2>
+
+    <div class='mt-8 grid md:grid-cols-3 gap-6'>
+      {{#each items}}
+        <div class='bg-white border rounded-xl p-6 text-center'>
+          <div class='text-2xl font-semibold'>{{title}}</div>
+          <div class='mt-1 text-lg'>{{text}}</div>
+          <div class='mt-1 text-slate-500 text-sm'>{{sub}}</div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

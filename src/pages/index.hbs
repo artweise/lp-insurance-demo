@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{brand.name}} — {{hero.eyebrow}}</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body class="bg-white text-slate-900" x-data="lp()">
+  {{> navbar data=nav brand=brand}}
+
+  {{> hero_bello data=hero compare=compare}}
+
+  {{> service_duo data=service}}
+
+  {{> trust_cards items=trust}}
+
+  {{> how_it_works data=how}}
+
+  {{> resources_grid items=resources}}
+
+  {{> cta_banner data=ctaBanner}}
+
+  {{> footer_cols data=footer brand=brand}}
+
+  {{> sticky_cta data=bottomCta}}
+
+  <script defer src="/scripts/alpine.min.js"></script>
+  <script src="/scripts/app.alpine.js"></script>
+</body>
+</html>

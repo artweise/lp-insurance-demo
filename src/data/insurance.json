@@ -1,0 +1,125 @@
+{
+  "brand": { "name": "bello", "logo": "/assets/images/logo.svg" },
+  "nav": {
+    "items": [
+      { "label": "Life insurance", "href": "#life" },
+      { "label": "Why Bello", "href": "#why" },
+      { "label": "Help", "href": "#help" }
+    ],
+    "login": { "label": "Log in", "href": "#" },
+    "cta": { "label": "Get my price", "href": "#calculator" }
+  },
+  "hero": {
+    "eyebrow": "MEET BELLO",
+    "title": "A New Kind Of Life Insurance",
+    "subtitle": "Secure your family's financial future,\nin as little as 10 minutes.",
+    "primaryCta": "GET MY PRICE",
+    "image": "/assets/images/hero.png"
+  },
+  "compare": {
+    "eyebrow": "SECURE YOUR FUTURE",
+    "title": "It’s more affordable\nthan you think",
+    "subtitle": "Life insurance shouldn’t be confusing or\nexpensive. Bello’s term life insurance makes\nprotecting your loved ones easy and affordable.",
+    "secondaryCta": "Get my price →",
+    "image": "/assets/images/coverage.png"
+  },
+  "service": {
+    "eyebrow": "TECHNOLOGY MEETS SERVICE",
+    "title": "We're here to help",
+    "text": "Bella, our smart bot, can guide you to your perfect policy. There's also human help whenever you need it.",
+    "cta": "Get help →",
+    "image": "/assets/images/help.jpg",
+    "badge": "There’s also human help"
+  },
+  "trust": [
+    {
+      "title": "A+",
+      "text": "Top-Rated",
+      "sub": "A+ Financial Strength by A.M. Best"
+    },
+    {
+      "title": "Expert guidance",
+      "text": "Talk to a human",
+      "sub": "Licensed agents ready to help"
+    },
+    {
+      "title": "We care",
+      "text": "Claims done right",
+      "sub": "Reliability in paying claims"
+    }
+  ],
+  "how": {
+    "title": "Affordable life insurance in minutes",
+    "text": "We use technology to save you time and money — no pushy sales agents, paperwork, or extra fees.",
+    "steps": [
+      {
+        "n": 1,
+        "title": "Get My Price",
+        "text": "Choose the amount then we’ll give you a quote."
+      },
+      {
+        "n": 2,
+        "title": "Apply",
+        "text": "Answer a few questions and start your policy."
+      },
+      {
+        "n": 3,
+        "title": "You’re Covered",
+        "text": "Congratulations on securing your loved ones’ future."
+      }
+    ],
+    "cta": "Get my price →"
+  },
+  "resources": [
+    {
+      "title": "Calculator",
+      "text": "How much life insurance do I need?",
+      "cta": "Calculate Coverage →",
+      "tone": "sky"
+    },
+    {
+      "title": "Term vs. perm",
+      "text": "Which life insurance is best for you?",
+      "cta": "See the winner →",
+      "tone": "paper"
+    },
+    {
+      "title": "Pricing",
+      "text": "How much does life insurance cost?",
+      "cta": "Tell me more →",
+      "tone": "paper"
+    },
+    {
+      "title": "Insurance 101",
+      "text": "The ultimate guide to life insurance.",
+      "cta": "Become an expert →",
+      "tone": "sky"
+    }
+  ],
+  "ctaBanner": {
+    "title": "Get Started Today.",
+    "text": "Join the Bello community of people who are securing their financial future.",
+    "cta": "Get my price →",
+    "imageLeft": "/assets/images/cta-left.png",
+    "imageRight": "/assets/images/cta-right.png"
+  },
+  "footer": {
+    "columns": {
+      "Resources": [
+        "Term life insurance plans",
+        "Insurance calculator",
+        "Guide to life insurance",
+        "Contact",
+        "Help"
+      ],
+      "Magazine": ["Insurance", "Finance", "Health", "Lifestyle"],
+      "More": ["Claims", "Terms", "Privacy", "Licenses"]
+    },
+    "social": [
+      { "label": "Facebook", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "YouTube", "href": "#" }
+    ]
+  },
+  "bottomCta": { "label": "GET MY PRICE", "href": "#calculator" }
+}

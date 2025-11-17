@@ -1,0 +1,17 @@
+<section class='py-16 bg-sky relative overflow-hidden'>
+  <div class='max-w-6xl mx-auto px-4 text-center'>
+    <h2 class='text-3xl md:text-4xl font-semibold'>{{data.title}}</h2>
+    <p class='mt-2 text-slate-700'>{{data.text}}</p>
+    <a href='#calculator' class='btn-primary mt-6 inline-flex'>{{data.cta}}</a>
+  </div>
+  <img
+    src='{{data.imageLeft}}'
+    alt=''
+    class='hidden md:block absolute left-6 bottom-0 h-40'
+  />
+  <img
+    src='{{data.imageRight}}'
+    alt=''
+    class='hidden md:block absolute right-6 bottom-0 h-40'
+  />
+</section>

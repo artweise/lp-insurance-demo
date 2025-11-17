@@ -1,0 +1,38 @@
+{
+  "name": "lp-insurance-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/assets/styles.css --minify",
+    "build:html": "node ./scripts/build.js",
+    "build": "npm-run-all build:*",
+    "watch:css": "tailwindcss -i ./src/styles/input.css -o ./dist/assets/styles.css --watch",
+    "watch:html": "chokidar 'src/**/*' -c 'node scripts/build.js'",
+    "serve": "live-server dist --port=5173 --no-browser",
+    "dev": "npm-run-all --parallel watch:* serve",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "chokidar-cli": "^3.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "handlebars": "^4.7.8",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.1"
+  }
+}
