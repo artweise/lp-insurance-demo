@@ -13,7 +13,12 @@
         class='mt-4 text-lg text-slate-600 whitespace-pre-line'
       >{{data.subtitle}}</p>
       <div class='mt-6 flex gap-3'>
-        <a href='#calculator' class='btn-primary'>
+        <a
+          href='#calculator'
+          class='btn-primary'
+          @click="trackCta('hero_main_cta')"
+          x-data='lp()'
+        >
           <span>{{data.primaryCta}}</span>
           <img src='/assets/images/arrow.png' alt='' class='btn-arrow' />
         </a>

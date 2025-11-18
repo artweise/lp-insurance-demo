@@ -2,17 +2,17 @@
   class='sticky top-0 z-40 bg-white/90 backdrop-blur border-b-2 border-gray-100'
 >
   <div class='max-w-6xl mx-auto px-4 h-16 flex items-center justify-between'>
-    <a href='#' class='flex items-center gap-2'>
+    <a href='#' class='flex items-center gap-2 order-2 md:order-1 px-4 md:px-0'>
       <img src='{{brand.logo}}' alt='{{brand.name}}' class='h-6 w-auto' />
     </a>
 
-    <nav class='hidden md:flex items-center gap-8 text-sm'>
+    <nav class='hidden md:flex items-center gap-8 text-sm md:order-2'>
       {{#each data.items}}
         <a href='{{href}}' class='hover:underline'>{{label}}</a>
       {{/each}}
     </nav>
 
-    <div class='hidden md:flex items-center gap-4'>
+    <div class='hidden md:flex items-center gap-4 md:order-3'>
       <a
         href='{{data.login.href}}'
         class='text-sm hover:underline'
@@ -20,20 +20,49 @@
       <a
         href='{{data.cta.href}}'
         class='btn-primary text-sm py-2'
+        @click="trackCta('navbar_cta')"
+        x-data='lp()'
       >{{data.cta.label}}</a>
     </div>
 
     <button
-      class='md:hidden inline-flex items-center p-2'
+      class='md:hidden inline-flex items-center p-2 order-1 px-4'
       @click='mobileNav=!mobileNav'
-      aria-label='Open menu'
+      :aria-label='mobileNav ? "Close menu" : "Open menu"'
+      :aria-expanded='mobileNav'
     >
-      ☰
+      <!-- Hamburger Icon -->
+      <svg
+        class='w-6 h-6'
+        fill='none'
+        stroke='currentColor'
+        viewBox='0 0 24 24'
+      >
+        <path
+          x-show='!mobileNav'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M4 6h16M4 12h16M4 18h16'
+        />
+        <path
+          x-show='mobileNav'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M6 18L18 6M6 6l12 12'
+        />
+      </svg>
     </button>
   </div>
 
   <!-- mobile drawer -->
-  <div class='md:hidden border-t' x-show='mobileNav' x-transition>
+  <div
+    class='md:hidden border-t'
+    x-show='mobileNav'
+    x-transition
+    @keydown.escape='mobileNav = false'
+  >
     <div class='px-4 py-3 space-y-3'>
       {{#each data.items}}
         <a href='{{href}}' class='block'>{{label}}</a>

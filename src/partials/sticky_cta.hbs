@@ -8,6 +8,8 @@
     <a
       href='{{data.href}}'
       class='btn-primary text-sm py-2 px-4'
+      @click="trackCta('sticky_bottom_cta')"
+      x-data='lp()'
     >{{data.label}}</a>
   </div>
 </div>
